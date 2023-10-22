@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react'
 
-import AOS from 'aos'
+const AOS = require('aos')
 import 'aos/dist/aos.css'
 
 
@@ -13,7 +13,7 @@ export default function DefaultLayout({
 }) {
 
   useEffect(() => {
-    AOS.init({
+    AOS.init?.({
       once: true,
       disable: 'phone',
       duration: 700,
