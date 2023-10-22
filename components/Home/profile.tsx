@@ -1,22 +1,25 @@
 import Image from "next/image"
 import {inter} from "@/app/api/util";
+import {BsCheckLg} from "react-icons/bs";
+import {useRouter} from "next/navigation";
 
 export default function Profile(){
+    const router = useRouter()
     return(
         <>
             <div className="grid grid-cols-1 md:grid-cols-2  md:items-center justify-center min-h-[60vh]">
-                <div className="flex-col grow bg-red-500 my-10 m-auto  ">
+                <div className="flex-col grow  my-10 m-auto  ">
                     <Image
-                        src="/logo2.png"
+                        src="/img/logo.png"
                         height={100}
-                        width={370}
+                        width={300}
                         quality={50}
                         alt="Hero"
                         className="object-contain w-auto h-auto"
                     />
                 </div>
-                <div className="flex-col grow bg-red-500 text-center md:text-left ">
-                    <h2 className={`h2 bg-blue-500 justify-center mb-8`}>
+                <div className="flex-col grow  text-center md:text-left ">
+                    <h2 className={`h2  justify-center mb-8`}>
                         Leading Manufacturer and exporter coconut charcoal briquettes
                     </h2>
                     <p className={`${inter.className} text-md mr-4 mb-8`}>
@@ -26,17 +29,17 @@ export default function Profile(){
                     </p>
 
                     <ul>
-                        <li>
-                            100% Coconut shell materials
+                        <li className="flex flex-row">
+                            <BsCheckLg className="rounded-full  p-0.5 m-1.5"/> 100% Coconut shell materials
                         </li>
-                        <li>
-                            Smokeless, odorless, low ash content
+                        <li className="flex flex-row" >
+                            <BsCheckLg className="rounded-full  p-0.5 m-1.5"/> Smokeless, odorless, low ash content
                         </li>
-                        <li>
-                            Long burning time, quick ignition time
+                        <li className="flex flex-row" >
+                            <BsCheckLg className="rounded-full  p-0.5 m-1.5"/> Long burning time, quick ignition time
                         </li>
                     </ul>
-                    <button className="btn my-8 text-white bg-blue-600 hover:bg-blue-700">
+                    <button onClick={() => router.push('/about')} className="btn my-8 text-white bg-blue-600 hover:bg-blue-700">
                         Know More
                     </button>
 

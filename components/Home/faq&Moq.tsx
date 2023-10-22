@@ -8,13 +8,13 @@ import {
 export default function Faq(){
     return(
         <>
-            <h1 className="h1 my-10"> FAQ & MOQ</h1>
-            <div className="w-5/12">
+            <h1 className="h1 mt-20 mb-10"> FAQ & MOQ</h1>
+            <div className="w-5/12 mb-20">
                 <Accordion type="single" collapsible className="w-full">
                     <AccordionItem value="item-1">
-                        <AccordionTrigger>Is it accessible?</AccordionTrigger>
+                        <AccordionTrigger>MOQ</AccordionTrigger>
                         <AccordionContent>
-                            Yes. It adheres to the WAI-ARIA design pattern.
+                            Our Minimum order quantity is 1 x 40 ft Container
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-2">

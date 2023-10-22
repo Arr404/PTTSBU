@@ -1,15 +1,22 @@
 import Image from "next/image";
 import Background from "@/public/background.webp"
 import {AiFillInstagram,AiFillYoutube,AiFillFacebook} from "react-icons/ai"
+import {Separator} from "@/components/ui/separator";
 export default function OurTeam(){
     return(
         <>
             <div>
-                <h1 className="text-center h1 mt-10">
+                <h1 className="text-center h1 mt-20">
                     Our Team
                 </h1>
+                <div className="flex flex-row gap-3 justify-center my-4 ">
+                    <Separator className={"w-12 border-2 rounded-sm border-yellow-500"}/><Separator className={"w-2 border-2 rounded-sm border-yellow-500"}/>
+                </div>
+                <h4 className="text-center text-slate-400">
+                    Getting close with our team and owner Briquettes
+                </h4>
                 <div className="flex flex-wrap items-center">
-                    <div className="team-box relative bg-red-500 mx-8 mt-8 w-[32rem] h-[32rem]">
+                    <div className="team-box relative  mx-8 mt-8 w-[32rem] h-[32rem]">
                         <Image
                             src={Background}
                             alt="Hero Login Image"

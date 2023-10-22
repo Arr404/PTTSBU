@@ -4,9 +4,9 @@ import { useSwipeable } from "react-swipeable";
 import {BsFillCaretLeftFill, BsFillCaretRightFill} from "react-icons/bs";
 
 
-export const CarouselItem = ({ children, width }) => {
+export const CarouselItem = ({ children, width, key }) => {
     return (
-        <div className="carousel-item flex flex-col" style={{ width: width }}>
+        <div key={key} className="carousel-item flex flex-col" style={{ width: width }}>
             {children}
         </div>
     );

@@ -18,6 +18,9 @@ import OurTeam from "@/components/Home/team";
 import Faq from "@/components/Home/faq&Moq";
 import WhyChooseUs from "@/components/Home/why-choose-us";
 import ProductionProsess from "@/components/Home/production-prosess";
+import OurCertificate from "@/components/Home/our-certificate";
+import Blog from "@/components/Home/blog";
+import Maps from "@/components/micro/map";
 
 export default function Home() {
   return (
@@ -31,8 +34,11 @@ export default function Home() {
             <OurTeam/>
             <WhyChooseUs/>
             <ProductionProsess/>
+            <OurCertificate/>
+            <Blog/>
             <Faq/>
         </main>
+        <Maps/>
         <Footer />
     </>
   )

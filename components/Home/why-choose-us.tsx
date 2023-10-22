@@ -1,11 +1,13 @@
 import Background from "@/public/background.webp";
 import Image from "next/image";
 import {BsCheckLg} from "react-icons/bs";
+import {useRouter} from "next/navigation";
 
 export default function WhyChooseUs() {
+    const router = useRouter()
     return(
         <>
-            <div className="flex flex-col place-items-center xl:place-items-start justify-center xl:flex-row bg-red-500">
+            <div className="mt-20 flex flex-col place-items-center xl:place-items-start justify-center xl:flex-row ">
 
                 <div className="w-full xl:w-6/12 ">
                     <Image
@@ -26,7 +28,7 @@ export default function WhyChooseUs() {
                     <h3 className="h2 text-left px-10 py-6 " >
                         Great Quality For Briquettes Product & Sustainable Business
                     </h3>
-                    <button className=" group relative btn overflow-hidden rounded-lg bg-white shadow">
+                    <button onClick={()=> router.push("/contact")} className=" group relative btn overflow-hidden rounded-lg bg-white shadow">
                         <div className="absolute inset-0 w-3 bg-slate-800 transition-all duration-[250ms] ease-out group-hover:w-full"/>
                         <span className="relative text-black group-hover:text-white">Get Quote</span>
                     </button>
@@ -35,7 +37,7 @@ export default function WhyChooseUs() {
                 <div className="w-full xl:mt-[24vh] relative xl:w-6/12">
                     <ul className="mx-10 my-8 xl:m-0 xl:mr-10 xl:absolute xl:left-[16vw]">
                         <li className="flex flex-row  ">
-                            <BsCheckLg className="rounded-full bg-blue-500 p-0.5 m-1.5"/>
+                            <BsCheckLg className="rounded-full  p-0.5 m-1.5"/>
                             <span className="font-semibold tracking-tighter text-lg">
                                 Reliability
                             </span>
@@ -43,7 +45,7 @@ export default function WhyChooseUs() {
                         <p className="ml-8 mb-8">Our products based on grade and requirement, We are committed to quality check our products from the raw matterials to the final products. </p>
 
                         <li className="flex flex-row  ">
-                            <BsCheckLg className="rounded-full bg-blue-500 p-0.5 m-1.5"/>
+                            <BsCheckLg className="rounded-full  p-0.5 m-1.5"/>
                             <span className="font-semibold tracking-tighter text-lg">
                                 Reliability
                             </span>

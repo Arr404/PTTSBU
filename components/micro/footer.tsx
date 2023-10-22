@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Footer  (){
     return (
         <>
-            <footer className={`${inter.variable} bg-blue-500 font-inter antialiased bg-blue-500 text-gray-900 tracking-tight px-20 pt-20 pb-8`}>
+            <footer className={`${inter.variable} bg-blue-800 font-inter antialiased  text-gray-900 tracking-tight px-20 pt-20 pb-8`}>
                 <div className="flex flex-col align-center md:flex-row m-auto min-w-full h-2/5">
                     <div className="grow">
                         <h2 className="text-xl text-white font-bold">Working Hours</h2>

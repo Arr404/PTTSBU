@@ -21,7 +21,7 @@ export default function ProductionProsess() {
         <>
             <Carousel>
                 {data.map((obj ,index)=>(
-                    <CarouselItem >
+                    <CarouselItem key={index} >
                         <img src={obj.img} alt="eror"/>
                         <p>{obj.text}</p>
                     </CarouselItem>

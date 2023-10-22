@@ -1,16 +1,24 @@
 import Image from "next/image";
-import Background from "@/public/background.webp";
+import Background from "@/public/img/bg1.webp";
 import Link from "next/link";
 import {inter} from "@/app/api/util";
 
+import bg1 from "@/public/img/bg1.webp"
+import bg2 from "@/public/img/bg2.webp"
+import bg3 from "@/public/img/bg3.webp"
+const bgImage:String[] = [
+    bg1,
+    bg2,
+    bg3
+]
 function Hero() {
     return (
         <section className="min-w-full p-12 pt-28 md:p-6 relative min-h-[110vh] flex flex-col md:flex-row pl-16 md:pl-32 md:items-center">
             <Image
-                src={Background}
+                src={bgImage[Math.floor(Math.random() * (bgImage.length))]}
                 alt="Hero Login Image"
                 fill
-                className="z-[-1] object-cover"
+                className="z-[-1] object-cover max-h-screen"
                 sizes="{(max-width: 768px) 768px, (max-width: 1440px) 1440px, 100vw}"
                 priority={true}
                 placeholder="blur"
