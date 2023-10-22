@@ -1,24 +1,31 @@
 "use client"
-import React, { useEffect, useState } from "react";
+import React, {JSXElementConstructor, Key, ReactElement, ReactNode, useEffect, useState} from "react";
 import { useSwipeable } from "react-swipeable";
 import {BsFillCaretLeftFill, BsFillCaretRightFill} from "react-icons/bs";
-
-
-export const CarouselItem = ({ children, width, key }) => {
+interface Props {
+    children: ReactNode
+    key: Key | null | undefined
+}
+interface childer{
+    child: ReactElement<any, string | JSXElementConstructor<any>>
+}
+interface PropsCarousel {
+    children: ReactNode
+}
+export const CarouselItem = ({ children, key }: Props) => {
     return (
-        <div key={key} className="carousel-item flex flex-col" style={{ width: width }}>
+        <div key={key} className="carousel-item flex flex-col">
             {children}
         </div>
     );
 };
 
-const Carousel = ({ children }) => {
+const Carousel = ({ children }: PropsCarousel) => {
     const setChildrenView = 3
     const [activeIndex, setActiveIndex] = useState(0);
     const [paused, setPaused] = useState(false);
 
-    const updateIndex = (newIndex) => {
-        console.log(newIndex)
+    const updateIndex = (newIndex:number) => {
         if (newIndex < 0) {
             newIndex = Math.round(React.Children.count(children)) - setChildrenView;
         } else if (newIndex >= Math.round(React.Children.count(children)-(setChildrenView-1))) {
@@ -67,7 +74,14 @@ const Carousel = ({ children }) => {
 
             <div className="inner" style={{ transform: `translateX(-${activeIndex * 100/setChildrenView}%)` }}>
                 {React.Children.map(children, (child, index) => {
-                    return React.cloneElement(child, { width: `${100/setChildrenView}%` });
+                    if (!child) {
+                        return null; // Skip undefined or null children
+                    }
+                    return (
+                        <div style={{ width: `${100 / setChildrenView}%` }}>
+                            {child}
+                        </div>
+                    );
                 })}
             </div>
 

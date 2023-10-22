@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, {StaticImageData} from "next/image";
 import Background from "@/public/img/bg1.webp";
 import Link from "next/link";
 import {inter} from "@/app/api/util";
@@ -6,7 +6,7 @@ import {inter} from "@/app/api/util";
 import bg1 from "@/public/img/bg1.webp"
 import bg2 from "@/public/img/bg2.webp"
 import bg3 from "@/public/img/bg3.webp"
-const bgImage:string[] = [
+const bgImage:StaticImageData[] = [
     bg1,
     bg2,
     bg3

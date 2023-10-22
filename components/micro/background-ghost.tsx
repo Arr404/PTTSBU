@@ -1,11 +1,11 @@
 'use client'
-import Image from "next/image";
+import Image, {StaticImageData} from "next/image";
 import {usePathname} from "next/navigation"
 
 import bg1 from "@/public/img/bg1.webp"
 import bg2 from "@/public/img/bg2.webp"
 import bg3 from "@/public/img/bg3.webp"
-const bgImage:string[] = [
+const bgImage:StaticImageData[] = [
     bg1,
     bg2,
     bg3
@@ -26,7 +26,7 @@ export default function BackgroundGhost() {
             />
             <div className="flex my-[10rem] md:my-[15rem] gap-2 flex-col items-center">
                 <h1 className="h1  text-white "> {pathname.slice(1,2).toUpperCase()+pathname.slice(2)}</h1>
-                <h1 className="h4  text-white"><a href="/">Home</a> > {pathname.slice(1)} </h1>
+                <h1 className="h4  text-white"><a href="/">Home</a> &gt; {pathname.slice(1)} </h1>
             </div>
         </>
     )
