@@ -33,7 +33,7 @@ export default function Home() {
             <AdvantageProduct/>
             <OurTeam/>
             <WhyChooseUs/>
-            <ProductionProsess/>
+            {/*<ProductionProsess/>*/}
             <OurCertificate/>
             <Blog/>
             <Faq/>
