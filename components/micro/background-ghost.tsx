@@ -5,7 +5,7 @@ import {usePathname} from "next/navigation"
 import bg1 from "@/public/img/bg1.webp"
 import bg2 from "@/public/img/bg2.webp"
 import bg3 from "@/public/img/bg3.webp"
-const bgImage:String[] = [
+const bgImage:string[] = [
     bg1,
     bg2,
     bg3

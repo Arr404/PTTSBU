@@ -1,8 +1,8 @@
 import Carousel, {CarouselItem} from "@/components/micro/carousel";
 
 export interface slickData {
-    img: String
-    text: String
+    img: string
+    text: string
 }
 
 export default function ProductionProsess() {

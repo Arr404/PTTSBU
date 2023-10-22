@@ -3,12 +3,12 @@ import {GoCommentDiscussion} from "react-icons/go";
 import {Separator2} from "@/components/micro/separator2";
 
 export interface blog{
-    img:String,
-    link:String
-    title:String,
-    text:String,
-    when:String,
-    who:String,
+    img:string,
+    link:string
+    title:string,
+    text:string,
+    when:string,
+    who:string,
     CommentNumber?: number,
 }
 export default function Blog() {
@@ -33,7 +33,7 @@ export default function Blog() {
             <Separator2/>
             <div className="flex flex-wrap justify-center gap-52  mx-20">
             {data.slice(0,3).map((obj,index)=>(
-                    <a key={index} href={obj.link as string} className="flex flex-col w-3/12">
+                    <a key={index} href={obj.link} className="flex flex-col w-3/12">
                         <img src={obj.img} alt="No Image"/>
                         <div className="flex flex-row my-4">
                             <AiOutlineTeam className="my-1"/>{obj.who}
