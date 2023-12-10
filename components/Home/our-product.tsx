@@ -8,20 +8,19 @@ import hexagon from "@/public/shape/hexagon.svg";
 export default function OurProduct() {
     return(
         <>
-            <div className={`text-center mt-18 md:mt-28`}>
-                <h2 className={`h2 mb-4 `}>Our Product</h2>
-                <div className="flex justify-center flex-row">
-                    <p className={`text-5xl bg-yellow-500 px-2 pt-2 mr-2 text-white`}>A</p>
+            <div className={`text-center mt-18 mx-2 md:mt-28`}>
+                <h2 data-aos="fade-up" className={`h2 mb-4 `}>Our Product</h2>
+                <div data-aos="fade-up" className="flex justify-center flex-row">
+                    <p className={`text-5xl bg-[#FFD646] px-2 pt-2 mr-2 text-white`}>O</p>
                     <p className={` max-w-screen-sm text-justify`}>
-                        ny type of our Coconut Charcoal Briquettes.
-                        Our product made from coconut shell as the raw material.
-                        As a totally natural and eco-friendly. Resulting in eco-friendly briquettes,
-                        that are free from chemicals and toxic
+                        ur products are customized based on grade and specific requirements. We are dedicated to
+                        ensuring the quality of our products through rigorous checks, starting from the raw materials
+                        and continuing through every stage of production.
                     </p>
                 </div>
 
-                <div className="mt-12 flex flex-wrap md:gap-28 gap-12">
-                    <div className="m-8 grid grid-rows-2">
+                <div className="mt-12 flex flex-wrap md:gap-28 gap-2">
+                    <div data-aos="fade-up" data-aos-delay="100" className="m-8 grid grid-rows-2">
                         <Image
                             src={cube}
                             alt="Product"
@@ -34,7 +33,7 @@ export default function OurProduct() {
                             Cube
                         </h4>
                     </div>
-                    <div className="m-8 grid grid-rows-2">
+                    <div data-aos="fade-up" data-aos-delay="200" className="m-8 grid grid-rows-2">
                         <Image
                             src={flat}
                             alt="Product"
@@ -46,7 +45,7 @@ export default function OurProduct() {
                             Flat
                         </h4>
                     </div>
-                    <div className="m-8 align-center justify-center grid grid-rows-2">
+                    <div data-aos="fade-up" data-aos-delay="300" className="m-8 align-center justify-center grid grid-rows-2">
                         <Image
                             src={finger}
                             alt="Product"
@@ -58,7 +57,7 @@ export default function OurProduct() {
                             Finger
                         </h4>
                     </div>
-                    <div className="m-8 align-center justify-center grid grid-rows-2">
+                    <div data-aos="fade-up" data-aos-delay="400" className="m-8 align-center justify-center grid grid-rows-2">
                         <Image
                             src={hexagon}
                             alt="Product"

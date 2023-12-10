@@ -21,6 +21,7 @@
     "react": "latest",
     "react-dom": "latest",
     "react-icons": "^4.11.0",
+    "react-responsive-carousel": "^3.2.23",
     "react-swipeable": "^7.0.1",
     "sweetalert2": "^11.7.31",
     "sweetalert2-react-content": "^5.0.7",
@@ -28,8 +29,8 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@types/node": "latest",
     "@types/google.maps": "latest",
+    "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "autoprefixer": "latest",

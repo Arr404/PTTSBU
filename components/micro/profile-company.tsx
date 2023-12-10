@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Backround from "@/public/img/bg1.webp"
+import Backround from "@/public/img/Shipping1.jpg"
 import {Separator} from "@/components/ui/separator";
 import Logo from "@/components/ui/logo";
 export default function ProfileCompany(
@@ -17,9 +17,9 @@ export default function ProfileCompany(
                         width={300}
                         alt={"wow"}/>
 
-                    <div className="mt-[-12rem] ml-24 gap-4 border border-white border-4 flex flex-col w-[12rem] pt-[3rem] h-[12rem] bg-yellow-500 text-center  text-white">
+                    <div className="mt-[-12rem] ml-24 gap-4 border border-white border-4 flex flex-col w-[12rem] pt-[3rem] h-[12rem] bg-[#FFD646] text-center  text-white">
                         <h1 className="text-6xl font-bold">
-                            2022
+                            2018
                         </h1>
                         <h5 className="h5">
                             Established
@@ -36,7 +36,7 @@ export default function ProfileCompany(
                 <div className="mx-24 xl:mr-24">
                     <Logo className="w-24 h-24 my-10 m-auto"/>
                     <Separator className="mb-4"/>
-                    <div className="w-full text-md text-gray-600">
+                    <div className="w-full text-md text-justify text-gray-600">
                         <div dangerouslySetInnerHTML={{__html: props.text}}/>
                     </div>
                 </div>

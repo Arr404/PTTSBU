@@ -15,40 +15,61 @@ interface ourProductSpec {
 export default function OurProduct() {
     const produc:ourProductSpec[] =[
         {
-            title:"SHISHA BRIQUETTES",
+            title:"Shisha/Hookah Briquettes",
             spec:[
                 {title:"Product Spesification",
                     item:[
-                        {specTitle:"Ash Content",specDec:": 1,8%-2,5%"},
-                        {specTitle:"Ash Color",specDec:" : White / Light Grey"},
-                        {specTitle:"Burning Time",specDec:" : 90-120 minutes"},
-                        {specTitle:"Ignition Time",specDec:" : <5 minutes"},
-                        {specTitle:"Fix Carbon",specDec:" : Minimal 80%"},
-                        {specTitle:"Moisture ",specDec:" : Max 5%"},
-                        {specTitle:"Volatile matter",specDec:" : 13,07%"},
-                        {specTitle:"Calorific value",specDec:" : 7000-7500 Kcal/kg"},
-                        {specTitle:"Origin",specDec:" : Boyolali, Central Java, Indonesia"},
-                        {specTitle:"Heat Content",specDec:" : < 550 derajat celcius "},
-                        {specTitle:"Material ",specDec:" : 100% Charcoal Shell Coconut"},
+                        {specTitle:"Moisture ",specDec:" : 5%"},
+                        {specTitle:"Ash Content",specDec:": 2%"},
+                        {specTitle:"Ash Color",specDec:" : White "},
+                        {specTitle:"Fix Carbon",specDec:" : 85%"},
+                        {specTitle:"Calorific value",specDec:" : 8000 Kcal"},
+                        {specTitle:"Volatile matter",specDec:" : 10%"},
+                        {specTitle:"Material ",specDec:" : Pure Natural Coconut Shell"},
+                        {specTitle:"Burning Time",specDec:" : 2 Hours"},
+                        {specTitle:"Size",specDec:" : Cube 2.2, Cube 2.5, Cube 2.6, Cube 2.7, Finger, Half Finger, Hexa, Kalaud (Can be customized) "},
+
                     ]},
-                {title:"Product Spesification",
-                    item:[
-                        {specTitle:"Ash Content",specDec:": 1,8%-2,5%"},
-                        {specTitle:"Ash Color",specDec:" : White / Light Grey"},
-                        {specTitle:"Burning Time",specDec:" : 90-120 minutes"},
-                        {specTitle:"Ignition Time",specDec:" : <5 minutes"},
-                        {specTitle:"Fix Carbon",specDec:" : Minimal 80%"},
-                        {specTitle:"Moisture ",specDec:" : Max 5%"},
-                        {specTitle:"Volatile matter",specDec:" : 13,07%"},
-                        {specTitle:"Calorific value",specDec:" : 7000-7500 Kcal/kg"},
-                        {specTitle:"Origin",specDec:" : Boyolali, Central Java, Indonesia"},
-                        {specTitle:"Heat Content",specDec:" : < 550 derajat celcius "},
-                        {specTitle:"Material ",specDec:" : 100% Charcoal Shell Coconut"},
-                    ]}
             ],
             image:[
-                {url:"./logo2.png",title:"Fillo Briquettes"},
-                {url:"./logo2.png",title:"Fillo Briquettes"}
+                {url:"/img/Shisha.JPG",title:"Tani Solusi Berjaya Utama"},
+
+            ]
+        },
+        {
+            title:"Barbecue Briquettes",
+            spec:[
+                {title:"Product Spesification",
+                    item:[
+                        {specTitle:"Moisture ",specDec:" : 5%"},
+                        {specTitle:"Ash Content",specDec:": 4-10%"},
+                        {specTitle:"Fix Carbon",specDec:" : 85%"},
+                        {specTitle:"Calorific value",specDec:" : 8500 Kcal"},
+                        {specTitle:"Volatile matter",specDec:" : 15%"},
+                        {specTitle:"Material ",specDec:" : Coconut Shell and Hardwood"},
+                        {specTitle:"Burning Time",specDec:" : 5 Hours"},
+
+                    ]},
+            ],
+            image:[
+                {url:"/img/BBq.jpg",title:"Tani Solusi Berjaya Utama"},
+            ]
+        },
+        {
+            title:"Hardwood/Lump Charcoal",
+            spec:[
+                {title:"Product Spesification",
+                    item:[
+                        {specTitle:"Shape",specDec:": Lump"},
+                        {specTitle:"Size",specDec:" : 5-20 Cm"},
+                        {specTitle:"Moisture ",specDec:" : Max 10%"},
+                        {specTitle:"Colories",specDec:" : Min. 7800"},
+                        {specTitle:"Burning Time",specDec:" : 3 Hours"},
+
+                    ]},
+            ],
+            image:[
+                {url:"/img/Hardwood.JPG",title:"Tani Solusi Berjaya Utama"},
             ]
         }
     ]
@@ -58,11 +79,11 @@ export default function OurProduct() {
             <BackgroundGhost/>
 
             <ProfileCompany text={
-                "We have 2 main types of charcoal briquettes for Shisa, Hookah and Barbeque with any grade and requirements"+
-                "<br/><br/>"+
-                "We are committed to delivering the highest quality products from raw materials, processes, production to packaging for a sustainable business and long term relationship"+
-                "<br/><br/>"+
-                "Our product made from 100% coconut shell as the raw material. As a totally natural and eco-friendly. Resulting in eco-friendly briquettes, that are free from chemicals and toxic"
+                "Discover Our Diverse Charcoal Briquette Selection:"+"<br/><br/>"+
+                "1. Shisha/Hookah Briquettes: Tailored for the perfect smoking experience."+"<br/>"+
+                "2. Barbecue Briquettes: Ignite the flavor of your grills."+"<br/>"+
+                "3. Hardwood/Lump Charcoal: Pure, robust, and ideal for an authentic barbecue experience."+"<br/><br/>"+
+                "For each of these premium products, we offer bespoke grading and specifications, tailored to your exact needs. Additionally, our packaging solutions are fully customizable, ensuring that your requirements are met to perfection. Our dedication to quality spans from the selection of raw materials, through the meticulous processes, right down to the final packaging, underscoring our commitment to fostering a sustainable business and nurturing long-term relationships."
             }/>
             {produc.map((obj,index)=>(
                 <div key={index} className="ml-12 md:ml-24">
@@ -98,13 +119,15 @@ export default function OurProduct() {
                             {obj.image.map((obj,index)=>(
                                 <div className="w-fit text-center m-8" key={index}>
                                     <Image
-                                        src={Backround}
+                                        src={obj.url}
+                                        width={200}
+                                        height={100}
                                         alt="No image"
-                                        className="object-cover max-w-[10rem] min-h-[10rem] md:max-w-[16rem] md:min-h-[16rem]"
+                                        className="object-cover max-w-[10rem] max-h-[10rem] md:max-w-[16rem] md:min-h-[16rem]"
                                         priority={true}
                                         quality={50}/>
                                     <h5 className="text-sm md:h5">
-                                        Coconut Charcoal Briquettes
+                                        {obj.title}
                                     </h5>
                                 </div>
                             ))}

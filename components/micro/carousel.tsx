@@ -14,7 +14,7 @@ interface PropsCarousel {
 }
 export const CarouselItem = ({ children, key }: Props) => {
     return (
-        <div key={key} className="carousel-item flex flex-col">
+        <div key={key} className="carousel-item min-w-full">
             {children}
         </div>
     );

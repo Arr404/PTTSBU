@@ -6,45 +6,52 @@ import {inter} from "@/app/api/util";
 import bg1 from "@/public/img/bg1.webp"
 import bg2 from "@/public/img/bg2.webp"
 import bg3 from "@/public/img/bg3.webp"
-const bgImage:StaticImageData[] = [
+import Carousel, {CarouselItem} from "@/components/micro/carousel";
+import {slickData} from "@/components/Home/production-prosess";
+import ResponsiveCarousel from "@/components/micro/carousel/responsive";
+export const bgImage:StaticImageData[] = [
     bg1,
     bg2,
     bg3
 ]
 function Hero() {
     return (
-        <section className="min-w-full p-12 pt-28 md:p-6 relative min-h-[110vh] flex flex-col md:flex-row pl-16 md:pl-32 md:items-center">
-            <Image
-                src={bgImage[Math.floor(Math.random() * (bgImage.length))]}
-                alt="Hero Login Image"
-                fill
-                className="z-[-1] object-cover max-h-screen"
-                sizes="{(max-width: 768px) 768px, (max-width: 1440px) 1440px, 100vw}"
-                priority={true}
-                placeholder="blur"
-                quality={50}
-            />
-            <div className=" px-9 py-16 ring-slate-200/70 rounded-[25px] bg-gradient-to-tr from-[#ccc3] to-[#ccca] backdrop-blur-sm">
+        <section data-aos="fade-up" data-aos-delay="500" className="min-w-full  md:p-6 relative min-h-[110vh] flex flex-col md:flex-row pl-16 md:pl-32 md:items-center">
+            <ResponsiveCarousel option="home"/>
+            {/*<Image*/}
+            {/*    src={bgImage[Math.floor(Math.random() * (bgImage.length))]}*/}
+            {/*    alt="Hero Login Image"*/}
+            {/*    fill*/}
+            {/*    className="z-[-1] object-cover max-h-screen"*/}
+            {/*    sizes="{(max-width: 768px) 768px, (max-width: 1440px) 1440px, 100vw}"*/}
+            {/*    priority={true}*/}
+            {/*    placeholder="blur"*/}
+            {/*    quality={50}*/}
+            {/*/>*/}
+            <div data-aos="fade-up" data-aos-delay="600" className="mt-12 w-10/12 md:w-auto px-9 py-16 ring-slate-200/70 rounded-[25px] bg-gradient-to-tr from-[#1C422580] to-[#1C4225E6] backdrop-blur-sm">
+                <h4
+                    className={` md:text-xl text-lg py-2 font-bold bg-gradient-to-r from-[#ffffffdb] to-[#FFF] text-transparent bg-clip-text ${inter.className}`}
+                >
+                    <span className="text-[#FFD646]">Premium Export Quality</span> </h4>
+                <h1
+                    className={`md:text-4xl text-3xl pt-2 font-extrabold bg-gradient-to-r from-[#ffffffdb] to-[#FFF] text-transparent bg-clip-text ${inter.className}`}
+                >
+                    <span className="text-[#FFD646]">T</span>HE&nbsp;
+                    <span className="text-[#FFD646]">B</span>EST&nbsp;
+                    <span className="text-[#FFD646]">C</span>HOICE&nbsp;
+                    <span className="text-[#FFD646]">F</span>OR&nbsp;
+                </h1>
+                <div className="  antialiased drop-shadow-xl">
+                        <button
+                            className={` my-2 ml-10 px-6 py-2 rounded-lg text-xl text-black-50 font-bold bg-[#FFD646] ${inter.className} hover:text-white hover:bg-orange-400 hover:translate-x-1 transition-all duration-300`}
+                        >
+                            <span className="drop-shadow-md"> CHARCOAL NEEDS</span>
+                        </button>
+                </div>
                 <h4
                     className={`text-slate-300 md:text-xl text-lg py-2 font-bold bg-gradient-to-r from-[#ffffffdb] to-[#FFF] text-transparent bg-clip-text ${inter.className}`}
                 >
-                    PREMIUM EXPORT QUALITY </h4>
-                <h1
-                    className={`md:text-6xl text-5xl py-2 font-extrabold bg-gradient-to-r from-[#ffffffdb] to-[#FFF] text-transparent bg-clip-text ${inter.className}`}
-                >
-                    The{" "}
-
-                    Briquettes
-                </h1>
-                <div className="md:max-w-[50%] antialiased drop-shadow-xl">
-                    <Link href="/register">
-                        <button
-                            className={`mt-6 px-6 py-2 rounded-lg text-xl text-orange-50 font-bold bg-[#FFA31D] ${inter.className} hover:text-white hover:bg-orange-400 hover:translate-x-1 transition-all duration-300`}
-                        >
-                            <span className="drop-shadow-md">About Us!</span>
-                        </button>
-                    </Link>
-                </div>
+                    <span className="text-[#FFD646]">PT. Tani Solusi Berjaya Utama</span> </h4>
             </div>
 
 

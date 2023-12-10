@@ -1,42 +1,53 @@
 import Image from "next/image"
 import {inter} from "@/app/api/util";
-import {BsCheckLg} from "react-icons/bs";
+import {BsCheckLg, BsDot} from "react-icons/bs";
 import {useRouter} from "next/navigation";
+import ResponsiveCarousel from "@/components/micro/carousel/responsive";
 
 export default function Profile(){
     const router = useRouter()
     return(
         <>
-            <div className="grid grid-cols-1 md:grid-cols-2  md:items-center justify-center min-h-[60vh]">
-                <div className="flex-col grow  my-10 m-auto  ">
-                    <Image
-                        src="/img/logo.png"
-                        height={100}
-                        width={300}
-                        quality={50}
-                        alt="Hero"
-                        className="object-contain w-auto h-auto"
-                    />
+            <div className="grid grid-cols-1 grid-rows-2 relative top-[-12rem] md:top-0 md:grid-cols-2 md:grid-rows-1 md:items-center justify-center min-h-[60vh]">
+                <div data-aos="fade-right" data-aos-duration="400" className="grow w-full h-full" >
+                    <div className="m-16 w-10/12">
+                        <ResponsiveCarousel className="max-h-4/12" option="factory"/>
+                    </div>
+                    {/*<Image*/}
+                    {/*    src="/img/logo.png"*/}
+                    {/*    height={100}*/}
+                    {/*    width={300}*/}
+                    {/*    quality={50}*/}
+                    {/*    alt="Hero"*/}
+                    {/*    className="object-contain w-auto h-auto"*/}
+                    {/*/>*/}
                 </div>
-                <div className="flex-col grow  text-center md:text-left ">
+                <div data-aos="fade-left" data-aos-delay="200" data-aos-duration="400" className="flex-col grow  text-center md:text-left ">
                     <h2 className={`h2  justify-center mb-8`}>
-                        Leading Manufacturer and exporter coconut charcoal briquettes
+                        Pure Charcoal, Premium Choice
                     </h2>
                     <p className={`${inter.className} text-md mr-4 mb-8`}>
-                        CV. Fillo Briquettes is a charcoal briquette factory which is one of the leading suppliers and exporters of coconut charcoal briquettes. Our factory is located in Boyolali, Central Java – Indonesia. We have 2 main types of charcoal briquettes for Shisa, Hookah and Barbeque with any grade and requirements
+                        PT. Tani Solusi Berjaya Utama is a leading charcoal briquette factory specializing in the production
+                        and export of high-quality coconut charcoal briquettes. With extensive experience in crafting
+                        premium charcoal briquettes, our factory is situated in Grobogan, Central Java, Indonesia.
                         <br/><br/>
-                        We are committed to delivering the highest quality products from raw materials, processes, production to packaging for a sustainable business and long term relationship
+                        We offer two primary types of charcoal briquettes tailored for Shisha, Hookah, and Barbecue
+                        applications, with the flexibility to meet various grades and custom requirements.
+                        <br/><br/>
+                        Since our establishment in 2018, we've garnered vast experience and have had the privilege to
+                        export our premium charcoal briquettes to esteemed markets including the USA, Middle East,
+                        Europe, and Brazil.
                     </p>
 
                     <ul>
                         <li className="flex flex-row">
-                            <BsCheckLg className="rounded-full  p-0.5 m-1.5"/> 100% Coconut shell materials
+                            <BsDot className="rounded-full text-3xl"/> 100% Coconut shell materials
                         </li>
                         <li className="flex flex-row" >
-                            <BsCheckLg className="rounded-full  p-0.5 m-1.5"/> Smokeless, odorless, low ash content
+                            <BsDot className="rounded-full text-3xl"/> Smokeless, odorless, low ash content
                         </li>
                         <li className="flex flex-row" >
-                            <BsCheckLg className="rounded-full  p-0.5 m-1.5"/> Long burning time, quick ignition time
+                            <BsDot className="rounded-full text-3xl"/> Long burning time, quick ignition time
                         </li>
                     </ul>
                     <button onClick={() => router.push('/about')} className="btn my-8 text-white bg-blue-600 hover:bg-blue-700">

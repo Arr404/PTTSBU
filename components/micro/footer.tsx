@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Footer  (){
     return (
         <>
-            <footer className={`${inter.variable} bg-blue-800 font-inter antialiased  text-gray-900 tracking-tight px-20 pt-20 pb-8`}>
+            <footer className={`${inter.variable} bg-[#1C4225] font-inter antialiased  text-gray-900 tracking-tight px-20 pt-20 pb-8`}>
                 <div className="flex flex-col align-center md:flex-row m-auto min-w-full h-2/5">
                     <div className="grow">
                         <h2 className="text-xl text-white font-bold">Working Hours</h2>
@@ -25,20 +25,18 @@ export default function Footer  (){
                         <h2 className="text-xl text-white font-bold">Office</h2>
                         <Separator className="my-6 bg-slate-300"/>
                         <div className="text-slate-300 flex flex-row">
-                            <a href="https:wa.me/6281235358908" className="grow hover:text-white"> Office : +62812-3535-8908</a>
+                            <a href="https:wa.me/628161166600" className="grow hover:text-white"> Phone : +628161166600 (Mr. Tommy Van Blora)</a>
                         </div>
                         <div className="mt-4 text-slate-300 flex flex-row">
-                            <a href="https:wa.me/6281235358908" className="grow hover:text-white"> Owner : +62822-4593-4783</a>
-                        </div>
-                        <div className="mt-4 text-slate-300 flex flex-row">
-                            <a href="https:wa.me/6281235358908" className="grow hover:text-white">
+                            <a href="https://www.google.com/maps/@-7.0953262,111.1403563,3a,75y,75.95h,75.77t/data=!3m6!1e1!3m4!1siyxD0x7gK0kwnczgXxaHRg!2e0!7i16384!8i8192?entry=ttu" className="grow hover:text-white">
                                 Address :
-                                JL. Simo-Klego Km 3. <br/>Ds. Kedung Lengkong, Simo, Boyolali, Central Java 57377
+                                Jalan Raya Nasional Blora - Purwodadi, Dsn. Semenrejo, <br/>Ds. Truwulo, Ngaringan,
+                                Grobongan, Central Java, Indonesia (58193)
                             </a>
                         </div>
                         <div className="mt-4 text-slate-300 flex flex-row">
                             <a href="mailto:agilfuad@gmail.com" className="grow hover:text-white">
-                                Email : contact@indobriquettes.com
+                                Email :
                             </a>
                         </div>
                     </div>
@@ -65,7 +63,7 @@ export default function Footer  (){
 
                 <div className="flex flex-row mt-16 text-white">
                     <div className="grow">
-                        © 2023 Fillo Briquettes.
+                        © 2023 Tani Solusi Berjaya Utama.
                     </div>
                     {navbar.map((object, index) => (
                         <div key={index}>

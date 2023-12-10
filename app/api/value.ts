@@ -8,5 +8,4 @@ export const navbar: Navigation[] = [
     { name: "Gallery", link: "gallery" },
     { name: "Our Product", link: "our-product" },
     { name: "About", link: "about" },
-    { name: "Contact", link: "contact" }
 ];
