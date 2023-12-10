@@ -11,87 +11,87 @@ interface galleryItem {
 }
 const galleryItem:galleryItem[] =[
     {
-        url:"/img/Gallery1.JPG",
+        url:"/img/Gallery1.jpg",
         label:"Factory Front View"
     },
     {
-        url:"/img/Gallery2.JPG",
+        url:"/img/Gallery2.jpg",
         label:"Factory Front View"
     },
     {
-        url:"/img/Gallery3.JPG",
+        url:"/img/Gallery3.jpg",
         label:"Hardwood Charcoal"
     },
     {
-        url:"/img/Gallery4.JPG",
+        url:"/img/Gallery4.jpg",
         label:"Coconut Shell Charcoal"
     },
     {
-        url:"/img/Gallery5.JPG",
+        url:"/img/Gallery5.jpg",
         label:"Charcoal Burning Test"
     },
     {
-        url:"/img/Gallery7.JPG",
+        url:"/img/Gallery7.jpg",
         label:"Hookah Shisha with Briqquetes"
     },
     {
-        url:"/img/Gallery8.JPG",
+        url:"/img/Gallery8.jpg",
         label:"Charcoal Burning Test"
     },
     {
-        url:"/img/Gallery9.JPG",
+        url:"/img/Gallery9.jpg",
         label:"Factory Working Environment"
     },
     {
-        url:"/img/Gallery10.JPG",
+        url:"/img/Gallery10.jpg",
         label:"Inside the oven"
     },
     {
-        url:"/img/Gallery14.JPG",
+        url:"/img/Gallery14.jpg",
         label:"Workers Photos"
     },
     {
-        url:"/img/Gallery15.JPG",
+        url:"/img/Gallery15.jpg",
         label:"Workers Photos"
     }
     ,{
-        url:"/img/Gallery18.JPG",
+        url:"/img/Gallery18.jpg",
         label:"Factory Inside View"
     }
     ,{
-        url:"/img/Gallery19.JPG",
+        url:"/img/Gallery19.jpg",
         label:"Factory Inside View"
     }
     ,{
-        url:"/img/Gallery21.JPG",
+        url:"/img/Gallery21.jpg",
         label:"Cube Charcoal Briqquettes"
     },
     {
-        url:"/img/Gallery22.JPG",
+        url:"/img/Gallery22.jpg",
         label:"Factory Working Environment"
     },
     {
-        url:"/img/Gallery23.JPG",
+        url:"/img/Gallery23.jpg",
         label:"Factory Working Environment"
     },
     {
-        url:"/img/Gallery24(1).JPG",
+        url:"/img/Gallery24(1).jpg",
         label:"Factory Inside View"
     },
     {
-        url:"/img/Gallery24.JPG",
+        url:"/img/Gallery24.jpg",
         label:"Cube Charcoal Briqquettes"
     },
     {
-        url:"/img/Gallery25.JPG",
+        url:"/img/Gallery25.jpg",
         label:"Cube Charcoal Briqquettes"
     },
     {
-        url:"/img/Gallery26.JPG",
+        url:"/img/Gallery26.jpg",
         label:"Factory Working Environment"
     },
     {
-        url:"/img/Gallery27.JPG",
+        url:"/img/Gallery27.jpg",
         label:"Factory Working Environment"
     }
 ]

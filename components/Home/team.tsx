@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Ayah from "@/public/img/Ayah1.JPG"
-import Adam from "@/public/img/Adam1.JPG"
+import Ayah from "@/public/img/Ayah1.jpg"
+import Adam from "@/public/img/Adam1.jpg"
 import {AiFillInstagram, AiFillFacebook, AiFillYoutube} from "react-icons/ai"
 import {Separator} from "@/components/ui/separator";
 import {FaWhatsapp} from "react-icons/fa6";

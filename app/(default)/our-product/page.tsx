@@ -32,7 +32,7 @@ export default function OurProduct() {
                     ]},
             ],
             image:[
-                {url:"/img/Shisha.JPG",title:"Tani Solusi Berjaya Utama"},
+                {url:"/img/Shisha.jpg",title:"Tani Solusi Berjaya Utama"},
 
             ]
         },
@@ -69,7 +69,7 @@ export default function OurProduct() {
                     ]},
             ],
             image:[
-                {url:"/img/Hardwood.JPG",title:"Tani Solusi Berjaya Utama"},
+                {url:"/img/Hardwood.jpg",title:"Tani Solusi Berjaya Utama"},
             ]
         }
     ]

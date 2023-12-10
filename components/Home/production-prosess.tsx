@@ -6,16 +6,16 @@ export interface slickData {
 }
 export const dataSlickHome:slickData[] =
     [
-        {img:"./img/Home3.JPG",text:"home"},
-        {img:"./img/Home2.JPG",text:"home"},
-        {img:"./img/Home1.JPG",text:"home"},
-        {img:"./img/Home4.JPG",text:"home"},
-        {img:"./img/Home5.JPG",text:"home"}
+        {img:"./img/Home3.jpg",text:"home"},
+        {img:"./img/Home2.jpg",text:"home"},
+        {img:"./img/Home1.jpg",text:"home"},
+        {img:"./img/Home4.jpg",text:"home"},
+        {img:"./img/Home5.jpg",text:"home"}
     ]
 export const dataSlickFactory:slickData[] =
     [
-        {img:"./img/Factory1.JPG",text:"factory"},
-        {img:"./img/Factory2.JPG",text:"factory"},
+        {img:"./img/Factory1.jpg",text:"factory"},
+        {img:"./img/Factory2.jpg",text:"factory"},
 
     ]
 export const dataSlick:slickData[] =
