@@ -20,7 +20,7 @@ export default function AdvantageProduct() {
                     </p>
                 </div>
 
-                <div data-aos="fade-up" className="w-full md:w-11/12 m-auto my-20 flex gap-[4rem] md:gap-[8rem]  flex-wrap justify-center">
+                <div data-aos="fade-up" className="w-full md:w-11/12 m-auto my-20 grid grid-cols-2 md:grid-cols-3 gap-[4rem] md:gap-[8rem]  flex-wrap justify-center">
                     {["Smoke Less","Odor Less",
                         "FREE CHEMICALS & TOXIC","QUICK IGNITION TIME","100% COCONUT SHELL","LONG BURNING TIME",].map((obj,ind)=>(
                         <div  key={ind} className="border-2 box pt-[4rem] w-[14rem] h-[10rem]">

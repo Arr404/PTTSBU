@@ -5,7 +5,7 @@ export default function Ship(){
         <>
             <div className="w-full mt-12">
                 <div className="w-full py-10 flex items-center md:flex-row flex-col gap-8">
-                    <div className="md:w-[50vw] w-[100vw] py-10 bg-[#FFD646] w-[50vw] flex flex-col items-center ">
+                    <div className="md:w-[50vw] w-full py-10 bg-[#FFD646] w-[50vw] flex flex-col items-center ">
                         <h1 className="h3 text-center ">
                             We Ship All Around The World
                         </h1>
@@ -16,7 +16,7 @@ export default function Ship(){
                     </div>
                     <div className="flex flex-col md:mt-0 mt-[-3rem] items-center ml-[-3rem]">
                         <div className={"md:w-[50vw] w-full"}>
-                            <ResponsiveCarousel option={"factory"} className={" max-h-[15.8rem] "} />
+                            <ResponsiveCarousel option={"factory"} className={" max-h-[16rem] "} />
                         </div>
                         <button className="absolute btn my-24 text-black bg-[#FFD646] hover:text-white hover:bg-yellow-600">
                             Contact Us

@@ -102,7 +102,7 @@ export default function Gallery() {
             <Header active={"gallery"}/>
             <BackgroundGhost/>
 
-            <div className="flex mx-10 my-24 md:mx-24 flex-wrap md:gap-12  mt-[12rem] md:mt-[17rem]">
+            <div className="w-full flex ml-12 md:ml-20 flex-wrap items-center my-24 gap-16 flex-wrap md:gap-12  mt-[12rem] md:mt-[17rem]">
                 {galleryItem.map((obj,index)=>(
                     <div className="m-4 ">
                         <Image
